@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>文字数カウント</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Bitter', serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 26px;
+    }
+
+    .btn-gradient-radius {
+      display: inline-block;
+      padding: 7px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      color: #FFF;
+      background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+      transition: .4s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-gradient-radius:hover {
+      background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+      border: none;
+    }
+    .btn-gradient-radius:focus,.btn-gradient-radius:active{
+      border: none;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>文字数カウント</h1>
+  <textarea id="textBox" cols="100" rows="20"></textarea>
+  <div>入力文字数(スペース、段落込み): <span class="allCnt">0</span></div>
+  <div>入力文字数(スペース込み): <span class="spaceCnt">0</span></div>
+  <div>入力文字数: <span class="textCnt">0</span></div>
+  <button value="clear" type="button" class="clear-button btn-gradient-radius">RESET</button>
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="count.js"></script>
+</body>
+
+</html>
